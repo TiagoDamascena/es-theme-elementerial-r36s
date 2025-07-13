@@ -32,6 +32,7 @@
       <size>0.05</size>      <!-- 16x 16y-->
       <visible>true</visible>
       <itemSpacing>0.008333333</itemSpacing>
+      <horizontalAlignment>right</horizontalAlignment>
 
       <!-- Assets -->
       <full>./assets/icons/screen/16x16/battery=full.svg</full>
