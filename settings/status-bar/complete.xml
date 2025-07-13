@@ -1,0 +1,46 @@
+<!--
+  Theme: Elementerial
+  Author: mluizvitor
+  Status Bar Option: Complete (Clock + Battery)
+-->
+
+<theme>
+  <formatVersion>4</formatVersion>
+
+  <view name="system, basic, detailed, grid">
+    <image name="osdBackground" extra="true">
+      <visible>true</visible>
+    </image>
+  </view>
+
+  <view name="screen">
+    <!-- Clock on the left side -->
+    <text name="clock">
+      <origin>0 0.5</origin>
+      <pos>0.033333 0.0375</pos>      <!-- Left-aligned position -->
+      <size>0.84 0</size>      <!-- 480x320 / 424x-->
+      <fontSize>${fontSizeCaption}</fontSize>
+      <fontPath>${fontRegular}</fontPath>
+      <lineSpacing>1</lineSpacing>
+      <alignment>left</alignment>
+      <visible>true</visible>
+    </text>
+
+    <!-- Battery on the right side -->
+    <batteryIndicator name="batteryIndicator">
+      <pos>0.93 0.0125</pos>      <!-- 480x320 / 456x (from right to left) 4y-->
+      <size>0.05</size>      <!-- 16x 16y-->
+      <visible>true</visible>
+      <itemSpacing>0.008333333</itemSpacing>
+
+      <!-- Assets -->
+      <full>./assets/icons/screen/16x16/battery=full.svg</full>
+      <at75>./assets/icons/screen/16x16/battery=75.svg</at75>
+      <at50>./assets/icons/screen/16x16/battery=50.svg</at50>
+      <at25>./assets/icons/screen/16x16/battery=25.svg</at25>
+      <empty>./assets/icons/screen/16x16/battery=empty.svg</empty>
+      <incharge>./assets/icons/screen/16x16/battery=charging.svg</incharge>
+      <networkIcon>./assets/icons/screen/16x16/wifi=on.svg</networkIcon>
+    </batteryIndicator>
+  </view>
+</theme>

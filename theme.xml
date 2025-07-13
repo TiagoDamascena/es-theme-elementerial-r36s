@@ -31,10 +31,10 @@
   </subset>
 
   <subset name="Status Bar" displayName="Status Bar">
-    <include name="complete" displayName="Clock + Battery" />
-    <include name="clock" displayName="Clock" />
-    <include name="battery" displayName="Battery" />
-    <include name="hidden" displayName="Hidden" />
+    <include name="complete" displayName="Clock + Battery">./settings/status-bar/complete.xml</include>
+    <include name="clock" displayName="Clock">./settings/status-bar/clock.xml</include>
+    <include name="battery" displayName="Battery">./settings/status-bar/battery.xml</include>
+    <include name="hidden" displayName="Hidden">./settings/status-bar/hidden.xml</include>
   </subset>
 
   <subset name="Ratio" displayName="Screen ratio">

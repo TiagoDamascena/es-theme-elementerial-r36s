@@ -1,0 +1,27 @@
+<!--
+  Theme: Elementerial
+  Author: mluizvitor
+  Status Bar Option: Hidden
+-->
+
+<theme>
+  <formatVersion>4</formatVersion>
+
+  <view name="system, basic, detailed, grid">
+    <image name="osdBackground" extra="true">
+      <visible>false</visible>
+    </image>
+  </view>
+
+  <view name="screen">
+    <!-- Clock hidden -->
+    <text name="clock">
+      <visible>false</visible>
+    </text>
+
+    <!-- Battery hidden -->
+    <batteryIndicator name="batteryIndicator">
+      <visible>false</visible>
+    </batteryIndicator>
+  </view>
+</theme>

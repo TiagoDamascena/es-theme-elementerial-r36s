@@ -1,0 +1,34 @@
+<!--
+  Theme: Elementerial
+  Author: mluizvitor
+  Status Bar Option: Clock Only
+-->
+
+<theme>
+  <formatVersion>4</formatVersion>
+
+  <view name="system, basic, detailed, grid">
+    <image name="osdBackground" extra="true">
+      <visible>true</visible>
+    </image>
+  </view>
+
+  <view name="screen">
+    <!-- Clock on the left side -->
+    <text name="clock">
+      <origin>0 0.5</origin>
+      <pos>0.033333 0.0375</pos>      <!-- Left-aligned position -->
+      <size>0.966667 0</size>      <!-- 480x320 / 432x-->
+      <fontSize>${fontSizeCaption}</fontSize>
+      <fontPath>${fontRegular}</fontPath>
+      <lineSpacing>1</lineSpacing>
+      <alignment>left</alignment>
+      <visible>true</visible>
+    </text>
+
+    <!-- Battery hidden -->
+    <batteryIndicator name="batteryIndicator">
+      <visible>false</visible>
+    </batteryIndicator>
+  </view>
+</theme>
